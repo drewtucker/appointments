@@ -2,9 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Make An Appointment</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Make An Appointment</h1>
+      <form>
 
+        <div class="form-group">
+          <label for="">Enter your name</label>
+          <input id="userName" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="">How can we help?</label>
+          <input id="userProblem" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="">Preferred appointment date</label>
+          <input id="userDate" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="">Preferred start time</label>
+          <input id="userStartTime" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="">Preferred end time</label>
+          <input id="userEndTime" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Click to submit</button>
+      </form>
+
+
+    </div>
   </body>
 </html>
