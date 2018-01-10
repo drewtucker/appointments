@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <title>Make An Appointment</title>
   </head>
   <body>
@@ -19,27 +20,43 @@
         </div>
 
         <div class="form-group">
-          <label for="">How can we help?</label>
+          <label for="userProblem">How can we help?</label>
           <input id="userProblem" class="form-control" type="text">
         </div>
 
         <div class="form-group">
-          <label for="">Preferred appointment date</label>
+          <label for="userDate">Preferred appointment date</label>
           <input id="userDate" class="form-control" type="text">
         </div>
 
         <div class="form-group">
-          <label for="">Preferred start time</label>
+          <label for="userStartTime">Preferred start time</label>
           <input id="userStartTime" class="form-control" type="text">
         </div>
 
         <div class="form-group">
-          <label for="">Preferred end time</label>
+          <label for="userEndTime">Preferred end time</label>
           <input id="userEndTime" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Click to submit</button>
+        <button type="submit" class="btn" data-toggle="modal" data-target="#confirmModal">Click to submit</button>
       </form>
 
+      <div class="modal fade" id="confirmModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Appointment Confirmed!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </body>
